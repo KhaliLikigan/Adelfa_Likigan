@@ -18,7 +18,7 @@ Enter the length of side a: 6
 
 Enter the length of side b: 8
 
-The hypotenuse is: 10.00
+The hypotenuse is: 10.0
 
 ## Author
 Name: Khali Wayde C. Likigan
