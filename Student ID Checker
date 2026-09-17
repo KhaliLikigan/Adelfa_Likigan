@@ -1,0 +1,9 @@
+import re
+
+ID = input("Enter student ID")
+pattern = r"\d{4}-\{4}"
+
+if re.fullmatch(pattern,ID):
+    print("Valid school ID")
+else:
+    print("Invalid school ID")
