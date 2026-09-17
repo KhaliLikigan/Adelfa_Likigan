@@ -1,0 +1,5 @@
+grade=input("Enter your Grade: ")
+if 0 <= grade <= 100:
+    print("Valid")
+else:
+    print("Invalid")
