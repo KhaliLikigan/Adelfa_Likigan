@@ -1,6 +1,6 @@
 examination=int(input("Enter examination score: "))
 
-if 0 <= examination <= 100 and examination.isdigit:
+if 0 <= examination <= 100 and examination.isdigit():
     print("Valid score")
 else:
     print("Invalid score")
