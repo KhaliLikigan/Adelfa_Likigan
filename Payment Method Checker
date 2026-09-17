@@ -1,0 +1,6 @@
+valid_cash=["Cash","Gcash","Card"]
+Cash=input("Enter payment method").lower()
+if Cash in valid_cash:
+    print("Valid payment method.")
+else:
+    print("Invalid payment method.")
