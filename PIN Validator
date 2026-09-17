@@ -1,0 +1,6 @@
+PIN=int(input("Create a 6-digit pin"))
+
+if len(pin) == 4 and pin.isdigit():
+    print("Valid PIN")
+else:
+    print("Invalid PIN")
