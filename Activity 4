@@ -5,5 +5,5 @@ sidea = int(input("Enter length of side a:" ))
 #Enter side b of right triangle
 sideb = int(input("Enter length of side b:" ))
 hypotenuse=math.sqrt(pow(sidea,2)+pow(sideb,2))
-print("hypotenuse")
+print(hypotenuse)
 #Get your result
