@@ -1,0 +1,35 @@
+def display_header():
+    print("-----------------------------")
+    print("STUDENT PERFORMANCE EVALUATOR")
+    print("-----------------------------")
+display_header()
+name = input("Enter your name: ")
+assessment1 = input("Enter your assessment 1: ")
+assessment2 = input("Enter your assessment 2: ")
+assessment3 = input("Enter your assessment 3: ")
+
+
+def get_student_info():
+    return name,assessment1, assessment2, assessment3
+
+average = (assessment1 + assessment2 + assessment3)/3
+
+if average <= 90:
+    performance_level = "Outstanding"
+elif average >= 85:
+    performance_level = "Very Satisfactory"
+elif average >= 80:
+    performance_level = "Satisfactory"
+elif average >= 75:
+    performance_level = "Fairly Satisfactory"
+else:
+    performance_level = "Needs improvement"
+
+def evaluate_performance():
+    return average, performance_level
+
+def display_report():
+    print(name)
+    print(f"Assesment Score: {assessment1, assessment2, assessment3}")
+    print(f"Average Score: {average:.2}")
+    print(f"Performance Level: {performance_level}")
