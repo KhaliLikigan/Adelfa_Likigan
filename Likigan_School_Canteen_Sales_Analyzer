@@ -1,0 +1,33 @@
+def get_total_sales(number_of_items):
+    total_sales = 0
+    Meeting_target = 0
+    Below_target = 0
+
+
+    for i in range(number_of_items):
+        sales = float(input(f"Enter sales for item {i + 1}: "))
+        total_sales  =+ sales
+
+        if sales >= 500.00:
+            Meeting_Target += 1
+        else:
+            Below_Target += 1
+
+    return total_sales, Meeting_Target, Below_Target
+
+def calculate_average(total_sales,number_of_items):
+    if number_of_items == 0:
+        return 0.00
+    return total_sales / number_of_items
+
+def main():
+    number_of_items = int(input("Enter number of food items: "))
+
+    total_sales, Meeting_Target, Below_Target = get_total_sales(number_of_items)
+
+    average = calculate_average(total_sales,number_of_items)
+
+    print("CANTEEN SALES REPORT")
+    print(f"Average Sales : {average:.2f} | Meeting Target : {Meeting_Target} | Below Target : {Below_Target}")
+
+main()
